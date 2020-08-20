@@ -1,6 +1,3 @@
-﻿<style>
-background-color : #ffd0d1;
-</style>
 
 # KGU-BigData-Desserting-Prj
 
