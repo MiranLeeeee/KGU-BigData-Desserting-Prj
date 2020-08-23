@@ -47,7 +47,7 @@
 ### 역할
 1.  **Team Naver (박선익, 이미란)**
 	* Naver 영수증 리뷰 전처리
-	* 전처리한 리뷰에 대해 각기 다른 라이브러리(```Okt```, ```Khaiii```)를 활용해 명사구 Tagging
+	* 전처리한 리뷰에 대해 각기 다른 라이브러리(```Mecab```, ```Khaiii```)를 활용해 명사구 Tagging
 	* 교차 명사를 사용해 TDM(Term Document Matrix) 생성
 	* 이를 통해 Topic Modeling 실시 및 최적의 Topic 수 결정
 	
