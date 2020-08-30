@@ -21,9 +21,11 @@ os.chdir('/content')
 !pip install /content/build/package_python
 
 import json # import json module
+import os
+os.chdir('/content')
 
 # with statement
-with open('desserting_appdata.json', encoding='utf-8') as json_file:
+with open('/content/desserting_appdata.json', encoding='utf-8') as json_file:
     json_data = json.load(json_file)
 
 # suple 데이터에서 menu를 뽑아오는 Code
@@ -44,7 +46,12 @@ for i in range(len(affiliates)):
     except:
         error_index.append(i)
 
+# 상위 10개의 항목 확인
+# 정규화 전이라 특수문자 및 긴 항목들이 많음.
+
 menu[:10]
+
+# Menu에서 특수문자, 숫자, 영어, 공백문자 제거
 
 import re 
 
@@ -52,14 +59,25 @@ final_data = []
 
 for line in menu:
   for word in line.split():
-    word = re.sub(r'[@%\\*=()/~#&\+á?\xc3\xa1\-\|\.\:\;\!\-\,\_\~\$\'\"\^]', '',word)
-    word = re.sub('[0-9]','', word)
-    word = re.sub('[-a-zA-Z]','', word)
-    word = re.sub(r'\s+', ' ', word)
-    if len(word) <10 and len(word) > 1 and word not in final_data:
+    word = re.sub(r'[@%\\*=()/~#&\+á?\xc3\xa1\-\|\.\:\;\!\-\,\_\~\$\'\"\^]', '',word) # 특수문자 제거
+    word = re.sub('[0-9]','', word) # 숫자 제거
+    word = re.sub('[-a-zA-Z]','', word) # 영어 제거
+    word = re.sub(r'\s+', ' ', word) # 공백 제거
+    if len(word) <10 and len(word) > 1 and word not in final_data: # 단어가 너무 길거나 한 글자인 단어 제외
       final_data.append(word)
     else:
       continue
+
+# 데이터 final list 형식 대로 저장
+
+'''
+사전 포맷 
+<어절(패턴)> <탭> <분석 결과>
+Example :
+얼그레이* \t 얼그레이/NNP
+-> 입력 어절 끝에 "*"가 있는 것은 전방 매치 패턴임
+: 이 경우에는 "얼그레이가", "얼그레이는" 등과 같이 여러 어절에 적용됨
+'''
 
 final = []
 for word in final_data:
@@ -75,7 +93,7 @@ final.columns = ['#']
 final.to_csv('/content/khaiii/rsc/src/preanal.manual', encoding='utf-8', index=False, header=False) 
 
 # 다른 곳에 저장
-# final.to_csv('preanal.manual'), encoding='utf-8', index=False, header=False)
+#final.to_csv('/content/preanal.manual', encoding='utf-8', index=False, header=False)
 
 # Khaiii 사용자 사전 추가
 !cd /content/khaiii/rsc
