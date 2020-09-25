@@ -3,7 +3,7 @@
 <h1 align="center">NAVER</h1>
 <img src="https://camo.githubusercontent.com/c8e731861319e0de793d621c8cf3fdf98f7e883c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f707974686f6e2d76332e372d677265656e" data-canonical-src="https://img.shields.io/badge/python-v3.7-green" style="max-width:100%;">
 
-<a target='_blank'><img src='https://ifh.cc/g/0r0sHl.png' border='0'></a>
+<a target='_blank'><img src='https://ifh.cc/g/0r0sHl.png' border='0' style='width:50%; height:50%;'></a>
 <h2>📙 1주차</h2>
 
 - [ ] 지역별 아뜰리에 개수 확인 및 조정
