@@ -1,6 +1,6 @@
 # Instagram
 
-<img src="https://camo.githubusercontent.com/c8e731861319e0de793d621c8cf3fdf98f7e883c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f707974686f6e2d76332e372d677265656e" data-canonical-src="https://img.shields.io/badge/python-v3.7-green" style="max-width:100%;">
+<img src="https://user-images.githubusercontent.com/63633074/94366623-70e59580-0114-11eb-96e7-825ad6ea836f.png" data-canonical-src="https://img.shields.io/badge/python-v3.7-green" style="max-width:100%;">
 
 ## 📙 1주차
 
