@@ -6,13 +6,13 @@
 <p><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/3540a7c082ffac150fec6f70110f84382a43c6ed/68747470733a2f2f6966682e63632f672f30723073486c2e706e67"><img src="https://camo.githubusercontent.com/3540a7c082ffac150fec6f70110f84382a43c6ed/68747470733a2f2f6966682e63632f672f30723073486c2e706e67" border="0" data-canonical-src="https://ifh.cc/g/0r0sHl.png" style="width:506px; height:273px;"></a></p>
 <h2>📙 1주차</h2>
 
-- [ ] 지역별 아뜰리에 개수 확인 및 조정
-- [ ] 지역별 아뜰리에명, 아뜰리에 고유 아이디(URL key) 크롤링
-- [ ] 프랜차이즈 아뜰리에 제거
+- [X] 지역별 아뜰리에 개수 확인 및 조정
+- [X] 지역별 아뜰리에명, 아뜰리에 고유 아이디(URL key) 크롤링
+- [X] 프랜차이즈 아뜰리에 제거
 - [ ] 아뜰리에별 네이버 영수증 리뷰 크롤링 ⭐
 
 <table>
 <tr><th>#</th></th><th>File name</th><th>Description</th><th>Input</th><th>Output</th></tr>
 <tr><td>1</td></td><td>get_atelier_name.py</td><td>-아뜰리에 개수를 확인 및 조정하고 지역명, 아뜰리에명, 아뜰리에 고유 아이디 크롤링</td><td>X</td><td>atelier_info.xlsx</td></tr>
-<tr><td>1</td></td><td>remove_franchise.py</td><td>-프렌차이즈형 카페를 제거하기 위해 아뜰리에 정보에서 빈도수가 3번 이하인 아뜰리에만 가지고옴</td><td>atelier_info.xlsx</td><td>remove_franchise_atelier_info.xlsx</td></tr>
+<tr><td>2</td></td><td>remove_franchise.py</td><td>-프렌차이즈형 카페를 제거하기 위해 아뜰리에 정보에서 빈도수가 3번 이하인 아뜰리에만 가지고옴</td><td>atelier_info.xlsx</td><td>remove_franchise_atelier_info.xlsx</td></tr>
 </table>
