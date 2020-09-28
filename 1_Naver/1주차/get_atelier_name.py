@@ -38,7 +38,7 @@ options.add_argument("disable-gpu")
 options.add_argument("user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36")
 driver = webdriver.Chrome('chromedriver', chrome_options=options)
 
-work_file = openpyxl.load_workbook('아뜰리에정보.xlsx')
+work_file = openpyxl.load_workbook('atelier_info.xlsx')
 
 #work_file.create_sheet('전국 아뜰리에')
 work_file_sheet = work_file.get_sheet_by_name('전국 아뜰리에')
@@ -126,7 +126,7 @@ for area in mapp:
     area_row_len = area_file_sheet.max_row
     area_file_sheet['A{}'.format(area_row_len+1)]=area
     area_file_sheet['B{}'.format(area_row_len+1)]=count
-    work_file.save('아뜰리에정보.xlsx')
+    work_file.save('atelier_info.xlsx')
 #driver.quit()
     
 

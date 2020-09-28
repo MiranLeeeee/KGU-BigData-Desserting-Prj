@@ -7,7 +7,7 @@ Created on Thu Aug 13 10:30:46 2020
 
 import openpyxl
 import collections
-work_file = openpyxl.load_workbook('아뜰리에정보.xlsx')
+work_file = openpyxl.load_workbook('atelier_info.xlsx')
 work_file_sheet = work_file.get_sheet_by_name('전국 아뜰리에')
 
 
@@ -26,7 +26,7 @@ for atelier, value in cc.items():
 
 
 
-w_file=openpyxl.load_workbook('프렌차이즈제거.xlsx')
+w_file=openpyxl.load_workbook('remove_franchise_atelier_info.xlsx')
 w_file.create_sheet('프렌차이즈 제거_전국 아뜰리에')
 work_sheet = w_file.get_sheet_by_name('프렌차이즈 제거_전국 아뜰리에')
 work_sheet['A1']='지역'
@@ -42,9 +42,9 @@ for atelier in range(2, row_len+1):
         work_sheet['B{}'.format(work_len+1)]=aa
         work_sheet['C{}'.format(work_len+1)]=work_file_sheet['C{}'.format(atelier)].value
         print(aa)
-    w_file.save('프렌차이즈제거.xlsx')
+    w_file.save('remove_franchise_atelier_info.xlsx')
 
-w_file=openpyxl.load_workbook('프렌차이즈제거.xlsx')
+w_file=openpyxl.load_workbook('remove_franchise_atelier_info.xlsx')
 w_file.create_sheet('프렌차이즈 제거_지역 별 개수')
 area_sheet = w_file.get_sheet_by_name('프렌차이즈 제거_지역 별 개수')
 area_sheet['A1']='지역'
@@ -65,7 +65,7 @@ for ar, va in area.items():
     area_sheet['A{}'.format(r_len+1)]=ar
     area_sheet['B{}'.format(r_len+1)]=va
 
-w_file.save('프렌차이즈제거.xlsx')
+w_file.save('remove_franchise_atelier_info.xlsx')
 
 
 
