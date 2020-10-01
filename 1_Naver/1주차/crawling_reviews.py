@@ -23,7 +23,6 @@ getKeywords: 각 아뜰리에 테마키워드 크롤링
 
 *Output
 atelier_reviews.xlsx: 각 아뜰리에 설명, 테마키워드, 리뷰, 평점 데이터 파일
-
 '''
 
 def getData(storeId, storeName, reviewPage):
@@ -45,7 +44,8 @@ def getData(storeId, storeName, reviewPage):
             reviewList.append(text)
 
         for score in scores:
-            scoreList.append(float(score.text))  #실수값으로 저장
+            #실수값으로 저장
+            scoreList.append(float(score.text))
 
     return reviewList, scoreList
 
@@ -87,19 +87,31 @@ write_ws['C1'] = '키워드'
 write_ws['D1'] = '리뷰'
 write_ws['E1'] = '평점'
 
-reviewList = []
-scoreList = []
-description = ""
-keywords = ""
-
 for i in range(0, 6225):
-
+    name = ""
+    reviewList = []
+    scoreList = []
+    description = ""
+    keywords = ""
     searchURL = "https://store.naver.com/restaurants/detail?entry=pll&id=" + str(storeIdList[i]) + "&query=" + storeList[i] + "&tab=receiptReview"
-    driver.get(searchURL)
-    #페이지 전환 시 텀을 줌
-    time.sleep(1)
+    errorCheck = 0
 
+    # 크롤링 중 404 에러 발생 방지
     try:
+        while True:
+            try:
+                driver.get(searchURL)
+                errorCheck += 1
+            except:
+                driver.refresh()
+            if errorCheck == 1:
+                break
+            else :
+                break
+
+        errorCheck = 0
+        #페이지 전환 시 텀을 줌
+        time.sleep(2)
         totalReviewPage = int(driver.find_elements_by_xpath("//*[@id='panel03']/div/div[2]/span")[0].text)
         reviewPage = 0
 
@@ -112,10 +124,32 @@ for i in range(0, 6225):
         else:
             reviewPage = totalReviewPage
 
-        #각 아뜰리에 리뷰데이터와 평점 데이터 가져오기
-        reviewList, scoreList = getData(str(storeIdList[i]), storeList[i], reviewPage)
-        # 각 아뜰리에 요약정보(설명) 및 테마키워드 가져오기
-        description, keywords = getKeywords(str(storeIdList[i]), storeList[i])
+        while True:
+            try:
+                #각 아뜰리에 리뷰데이터와 평점 데이터 가져오기
+                reviewList, scoreList = getData(str(storeIdList[i]), storeList[i], reviewPage)
+                errorCheck += 1
+            except:
+                driver.refresh()
+            if errorCheck == 1:
+                break
+            else :
+                break
+
+        errorCheck = 0
+        while True:
+            try:
+                # 각 아뜰리에 요약정보(설명) 및 테마키워드 가져오기
+                description, keywords = getKeywords(str(storeIdList[i]), storeList[i])
+                errorCheck += 1
+            except:
+                driver.refresh()
+            if errorCheck == 1:
+                break
+            else :
+                break
+
+        errorCheck = 0
         name = storeList[i]
 
         #가져온 각 데이터를 엑셀파일 셀에 저장
