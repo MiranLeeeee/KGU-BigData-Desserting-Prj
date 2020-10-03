@@ -9,10 +9,11 @@
 - [X] 지역별 아뜰리에 개수 확인 및 조정
 - [X] 지역별 아뜰리에명, 아뜰리에 고유 아이디(URL key) 크롤링
 - [X] 프랜차이즈 아뜰리에 제거
-- [ ] 아뜰리에별 네이버 영수증 리뷰 크롤링 ⭐
+- [X] 아뜰리에별 네이버 영수증 리뷰 크롤링 ⭐
 
 <table>
-<tr><th>#</th></th><th>File name</th><th>Description</th><th>Input</th><th>Output</th></tr>
-<tr><td>1</td></td><td>get_atelier_name.py</td><td>-아뜰리에 개수를 확인 및 조정하고 지역명, 아뜰리에명, 아뜰리에 고유 아이디 크롤링</td><td>X</td><td>atelier_info.xlsx</td></tr>
-<tr><td>2</td></td><td>remove_franchise.py</td><td>-프렌차이즈형 카페를 제거하기 위해 아뜰리에 정보에서 빈도수가 3번 이하인 아뜰리에만 가지고옴</td><td>atelier_info.xlsx</td><td>remove_franchise_atelier_info.xlsx</td></tr>
+<tr><th>#</th><th>File name</th><th>Description</th><th>Input</th><th>Output</th></tr>
+<tr><td>1</td><td>get_atelier_name.py</td><td>-아뜰리에 개수를 확인 및 조정하고 지역명, 아뜰리에명, 아뜰리에 고유 아이디 크롤링</td><td>X</td><td>atelier_info.xlsx</td></tr>
+<tr><td>2</td><td>remove_franchise.py</td><td>-프렌차이즈형 카페를 제거하기 위해 아뜰리에 정보에서 빈도수가 3번 이하인 아뜰리에만 가지고옴</td><td>atelier_info.xlsx</td><td>remove_franchise_atelier_info.xlsx</td></tr>
+<tr><td>3</td><td>crawling_reviews.py</td><td>-아뜰리에별 네이버 영수증 리뷰 크롤링 (추가적으로 요약설명, 테마키워드, 리뷰, 별점 정보 크롤링)</td><td>remove_franchise_atelier_info.xlsx</td><td>atelier_reviews.xlsx</td></tr>
 </table>
