@@ -79,13 +79,18 @@ for i in range(2, 6227):
 path = "resource/chromedriver"
 driver = webdriver.Chrome(path)
 write_wb = openpyxl.Workbook()
-write_ws = write_wb.active
+write_wb.create_sheet('아뜰리에_리뷰평점')
+write_wb.create_sheet('아뜰리에_이름설명키워드')
 
+write_ws = write_wb.get_sheet_by_name('아뜰리에_리뷰평점')
 write_ws['A1'] = '아뜰리에명'
-write_ws['B1'] = '설명'
-write_ws['C1'] = '키워드'
-write_ws['D1'] = '리뷰'
-write_ws['E1'] = '평점'
+write_ws['B1'] = '리뷰'
+write_ws['C1'] = '평점'
+
+write_info = write_wb.get_sheet_by_name('아뜰리에_이름설명키워드')
+write_info['A1'] = '아뜰리에명'
+write_info['B1'] = '설명'
+write_info['C1'] = '키워드'
 
 for i in range(0, 6225):
     name = ""
@@ -96,7 +101,7 @@ for i in range(0, 6225):
     searchURL = "https://store.naver.com/restaurants/detail?entry=pll&id=" + str(storeIdList[i]) + "&query=" + storeList[i] + "&tab=receiptReview"
     errorCheck = 0
 
-    # 크롤링 중 404 에러 발생 방지
+    #크롤링 중 404 에러 발생 방지
     try:
         while True:
             try:
@@ -156,10 +161,15 @@ for i in range(0, 6225):
         for k in range(0, len(reviewList)):
             review = reviewList[k]
             score = scoreList[k]
-            write_ws.append([name, description, keywords, review, score])
+            write_ws.append([name, review, score])
 
     except:
         driver.refresh()
+
+    if len(name) > 1:
+        write_info['A{}'.format(cnt+1)] = name
+        write_info['B{}'.format(cnt+1)] = description
+        write_info['C{}'.format(cnt+1)] = keywords
 
 write_wb.save('atelier_reviews.xlsx')
 
