@@ -17,3 +17,13 @@
 <tr><td>2</td><td>remove_franchise.py</td><td>-프렌차이즈형 카페를 제거하기 위해 아뜰리에 정보에서 빈도수가 3번 이하인 아뜰리에만 가지고옴</td><td>atelier_info.xlsx</td><td>remove_franchise_atelier_info.xlsx</td></tr>
 <tr><td>3</td><td>crawling_reviews.py</td><td>-아뜰리에별 네이버 영수증 리뷰 크롤링 (추가적으로 요약설명, 테마키워드, 리뷰, 별점 정보 크롤링)</td><td>remove_franchise_atelier_info.xlsx</td><td>atelier_reviews.xlsx</td></tr>
 </table>
+<br>
+<h2>📘 2주차</h2>
+
+- [ ] 네이버 아뜰리에별 메뉴 크롤링 
+
+<table>
+<tr><th>#</th><th>File name</th><th>Description</th><th>Input</th><th>Output</th></tr>
+<tr><td>1</td><td>crawling_menu.py</td><td>-네이버 아뜰리에별 메뉴 크롤링 (추가적으로 아뜰리에별 블로그 리뷰 요약정보 크롤링) </td><td>remove_franchise_atelier_info.xlsx</td><td>atelier_menu.xlsx</td></tr>
+</table>
+<br>
