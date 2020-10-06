@@ -11,4 +11,11 @@
 <table>
 <tr><th>#</th></th><th>File name</th><th>Description</th><th>Input</th><th>Output</th></tr>
 <tr><td>1</td></td><td>Instagram Crawling.py</td><td>-탐색한 전문 리뷰어들의 아이디를 접속하면서 닉네임, 리뷰, 태그를 크롤링</td><td>X</td><td>raw_data.csv</td></tr>
+<tr><td>2</td></td><td>Remove Emoji.py</td><td>크롤링한 리뷰에서 한글만 가져오고, Emoji를 삭제</td><td>raw_data.csv</td><td>preprocessed_data.csv</td></tr>
 </table>
+
+
+## 📘 2주차
+
+* [ ] 리뷰에서 디저트 리뷰만 뽑아내기 위한 동사 사전 생성
+* [ ] 디저트 메뉴만 뽑아서 메뉴 사전 구축
