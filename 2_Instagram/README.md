@@ -19,3 +19,7 @@
 
 * [ ] 리뷰에서 디저트 리뷰만 뽑아내기 위한 동사 사전 생성
 * [ ] 디저트 메뉴만 뽑아서 메뉴 사전 구축
+<table>
+<tr><th>#</th></th><th>File name</th><th>Description</th><th>Input</th><th>Output</th></tr>
+<tr><td>1</td></td><td>Verb_Dictionary.py</td><td>-먹는 것과 관련된 동사 사전 생성 Code</td><td>preprcoessed_data.csv</td><td>동사사전.csv</td></tr>
+</table>
