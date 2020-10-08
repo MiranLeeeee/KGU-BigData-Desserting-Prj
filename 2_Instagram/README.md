@@ -22,4 +22,5 @@
 <table>
 <tr><th>#</th></th><th>File name</th><th>Description</th><th>Input</th><th>Output</th></tr>
 <tr><td>1</td></td><td>Verb_Dictionary.py</td><td>-먹는 것과 관련된 동사 사전 생성 Code</td><td>preprcoessed_data.csv</td><td>동사사전.csv</td></tr>
+<tr><td>2</td></td><td>Menu_Dictionary.py</td><td>-디저트 관련 사전 구축 Code</td><td>preprcoessed_data.csv</td><td>메뉴사전.csv</td></tr>
 </table>
