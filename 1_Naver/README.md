@@ -21,7 +21,7 @@
 <h2>📘 2주차 </h2>
 
 - [X] 네이버 영수증 리뷰가 30개 이상인 아뜰리에명, 아뜰리에 고유 아이디 저장 
-- [ ] 네이버 아뜰리에별 메뉴 크롤링 
+- [X] 네이버 아뜰리에별 메뉴 크롤링 
 
 <table>
 <tr><th>#</th><th>File name</th><th>Description</th><th>Input</th><th>Output</th></tr>
