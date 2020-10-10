@@ -23,4 +23,5 @@
 <tr><th>#</th></th><th>File name</th><th>Description</th><th>Input</th><th>Output</th></tr>
 <tr><td>1</td></td><td>Verb_Dictionary.py</td><td>-먹는 것과 관련된 동사 사전 생성 Code</td><td>preprcoessed_data.csv</td><td>동사사전.csv</td></tr>
 <tr><td>2</td></td><td>Menu_Dictionary.py</td><td>-디저트 관련 사전 구축 Code</td><td>preprcoessed_data.csv</td><td>메뉴사전.csv</td></tr>
+<tr><td>3</td></td><td>Dessert_Dictionary.py</td><td>-위의 두개의 코드를 통해 Review들 중에서 디저트와 먹는 것과 관련된 Review만 선별하는 Code</td><td>1) 동사사전.csv<br>2) 메뉴사전.csv</td><td>Real_Review.csv</td></tr>
 </table>
