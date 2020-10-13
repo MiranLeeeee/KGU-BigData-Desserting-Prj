@@ -21,7 +21,7 @@ CREATE TABLE users(
     CONSTRAINT users_pk PRIMARY KEY (userid, username)
 );
 
---아뜰리에 정보(고유아이디, 이름, 토픽, 설명) 테이블
+--아뜰리에 정보(아이디, 이름, 토픽, 설명) 테이블
 CREATE TABLE ateliers(
     atelierid character varying(25),
     ateliername character varying(80),
