@@ -4,10 +4,10 @@
 
 ## 📙 1주차
 
-* [ ] 인스타그램에서 디저트 전문 리뷰어들 탐색 
-* [ ] 위의 리뷰어들 ID 저장 및 크롤링
-* [ ] 아이디, 리뷰, 태그 크롤링
-* [ ] 추후 이모지 및 특수문자 전처리
+* [X] 인스타그램에서 디저트 전문 리뷰어들 탐색 
+* [X] 위의 리뷰어들 ID 저장 및 크롤링
+* [X] 아이디, 리뷰, 태그 크롤링
+* [X] 추후 이모지 및 특수문자 전처리
 <table>
 <tr><th>#</th></th><th>File name</th><th>Description</th><th>Input</th><th>Output</th></tr>
 <tr><td>1</td></td><td>Instagram Crawling.py</td><td>-탐색한 전문 리뷰어들의 아이디를 접속하면서 닉네임, 리뷰, 태그를 크롤링</td><td>X</td><td>raw_data.csv</td></tr>
@@ -17,8 +17,8 @@
 
 ## 📘 2주차
 
-* [ ] 리뷰에서 디저트 리뷰만 뽑아내기 위한 동사 사전 생성
-* [ ] 디저트 메뉴만 뽑아서 메뉴 사전 구축
+* [X] 리뷰에서 디저트 리뷰만 뽑아내기 위한 동사 사전 생성
+* [X] 디저트 메뉴만 뽑아서 메뉴 사전 구축
 <table>
 <tr><th>#</th></th><th>File name</th><th>Description</th><th>Input</th><th>Output</th></tr>
 <tr><td>1</td></td><td>Verb_Dictionary.py</td><td>-먹는 것과 관련된 동사 사전 생성 Code</td><td>preprcoessed_data.csv</td><td>동사사전.csv</td></tr>
