@@ -9,6 +9,10 @@ from collections import Counter
 # 한글 자모분리 모듈
 from jamo import h2j, j2hcj
 
+'''
+Google Colab에서 사용할 것.
+'''
+
 # 아뜰리에 메뉴 사전 dictionary형태로 변환
 menu_df = pd.read_csv('아뜰리에메뉴사전_real.csv', encoding='utf-8')
 menu_df = menu_df.fillna("")
