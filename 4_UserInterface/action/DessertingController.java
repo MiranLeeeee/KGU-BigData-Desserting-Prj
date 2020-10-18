@@ -22,6 +22,8 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+//DB와 엑셀파일에 임의의 데이터 삽입 후 test
+
 @Controller
 public class DessertingController extends prj_DessertingController {
 	  @RequestMapping(value = "/atelier")
@@ -33,5 +35,26 @@ public class DessertingController extends prj_DessertingController {
 	  public String setDessertingPage(HttpServletRequest request, @ModelAttribute DessertingForm form, ModelMap model) throws SQLException, IOException, ParseException {
 	    return "/main/result";
 	   }
+
+	  //추천된 아뜰리에 select
+	  @RequestMapping({"/desserting/findAteliers"})
+	  @ResponseBody
+	  public JSONArray findAteliers(HttpServletRequest request, @ModelAttribute DessertingForm form, ModelMap model) throws SQLException, IOException {
+	    JSONArray result = new JSONArray();
+	    String id = form.getId();
+	    result = rows2JsonArray(getServiceManager().getDessertingCarrier().findAteliers(id));
+
+	    return result;
+	  }
+
+	  //아뜰리에 select box에 모든 아뜰리에 insert
+	  @RequestMapping({"/desserting/getAteliers"})
+	  @ResponseBody
+	  public JSONArray getAteliers(HttpServletRequest request, @ModelAttribute DessertingForm form, ModelMap model) throws SQLException, IOException {
+	    JSONArray result = new JSONArray();
+	    result = rows2JsonArray(getServiceManager().getDessertingCarrier().getAteliers());
+
+	    return result;
+	  }
 
 }//DessertingController end
