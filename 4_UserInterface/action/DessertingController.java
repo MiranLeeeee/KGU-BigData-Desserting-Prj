@@ -22,7 +22,6 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-//DB와 엑셀파일에 임의의 데이터 삽입 후 test
 
 @Controller
 public class DessertingController extends prj_DessertingController {
@@ -57,11 +56,11 @@ public class DessertingController extends prj_DessertingController {
 	    return result;
 	  }
 
-    //각 토픽의 단어와 수치값 insert
-	@RequestMapping({"/desserting/putWords"})
-	@ResponseBody
-	public void putWords(HttpServletRequest request, @ModelAttribute DessertingForm form, ModelMap model) throws SQLException, IOException {
-		try {
+      //각 토픽의 단어와 수치값 insert
+	  @RequestMapping({"/desserting/putWords"})
+	  @ResponseBody
+	  public void putWords(HttpServletRequest request, @ModelAttribute DessertingForm form, ModelMap model) throws SQLException, IOException {
+	    try {
 	            FileInputStream file = new FileInputStream("./Desserting/WEB-INF/excel/desserting/words.xlsx");
 	            XSSFWorkbook workbook = new XSSFWorkbook(file);
 
@@ -120,7 +119,7 @@ public class DessertingController extends prj_DessertingController {
 		}catch(Exception e) {
 	            e.printStackTrace();
 	    }
-	}
+	  }
 
 	  //각 토픽별 단어와 수치값 select
 	  @RequestMapping({"/desserting/getWords"})
