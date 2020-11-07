@@ -21,6 +21,17 @@ CREATE TABLE users(
     CONSTRAINT users_pk PRIMARY KEY (userid, username)
 );
 
+--사용자별 토픽별 유사도 정보 테이블
+CREATE TABLE users_sim(
+    userid character varying(25),
+    t1 double precision,
+    t2 double precision,
+    t3 double precision,
+    t4 double precision,
+    t5 double precision,
+    CONSTRAINT users_sim_pk PRIMARY KEY (userid)
+);
+
 --아뜰리에 정보(아이디, 이름, 토픽, 설명) 테이블
 CREATE TABLE ateliers(
     atelierid character varying(25),
@@ -29,3 +40,15 @@ CREATE TABLE ateliers(
     description text,
     CONSTRAINT ateliers_pk PRIMARY KEY (atelierid, ateliername)
 );
+
+--아뜰리에별 토픽별 유사도 정보 테이블
+CREATE TABLE ateliers_sim(
+    atelierid character varying(50),
+    t1 double precision,
+    t2 double precision,
+    t3 double precision,
+    t4 double precision,
+    t5 double precision,
+    CONSTRAINT ateliers_sim_pk PRIMARY KEY (atelierid)
+);
+
