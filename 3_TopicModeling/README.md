@@ -20,4 +20,5 @@
 <tr><td>3</td><td>Khaiii_Dictionary.py</td><td>Khaiii 분석기에 사용자 사전 추가</td><td>X</td><td>X</td></tr>
 <tr><td>4</td><td>Khaiii_Gensim.py</td><td>Khaiii와 Gensim Topic Modeling</td><td>X</td><td>X</td></tr>
 <tr><td>5</td><td>Gensim_TopicModeling.py</td><td>Gensim만을 사용한 Topic Modeling</td><td>X</td><td>X</td></tr>
+<tr><td>6</td><td>Gensim_Tuning.py</td><td>Parameter Tuning</td><td>X</td><td>X</td></tr>
 </table>
