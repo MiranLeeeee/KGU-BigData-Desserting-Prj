@@ -11,7 +11,7 @@
 
 <br>
 
-## Files
+## 📄 Files
 
 <table>
 <tr><th>#</th><th>File name</th><th>Description</th><th>Input</th><th>Output</th></tr>
@@ -21,4 +21,5 @@
 <tr><td>4</td><td>Khaiii_Gensim.py</td><td>Khaiii와 Gensim Topic Modeling</td><td>X</td><td>X</td></tr>
 <tr><td>5</td><td>Gensim_TopicModeling.py</td><td>Gensim만을 사용한 Topic Modeling</td><td>X</td><td>X</td></tr>
 <tr><td>6</td><td>Gensim_Tuning.py</td><td>Parameter Tuning</td><td>X</td><td>X</td></tr>
+<tr><td>7</td><td>preanal.manual</td><td>Khaiii 사용자 사전</td><td>X</td><td>X</td></tr>
 </table>
