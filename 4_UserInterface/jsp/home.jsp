@@ -4,6 +4,8 @@
 <html>
 <%=Face.loadMainHead(request, "Home")%>
 <head>
+<script src="../js/home.js"></script>
+
 <style>
 .choiceImg {
 	width: 70px;
