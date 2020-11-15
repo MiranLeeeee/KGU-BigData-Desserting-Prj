@@ -4,6 +4,7 @@
 <html>
 <%=Face.loadMainHead(request, "Atelier")%>
 <head>
+<script src="../js/atelier.js"></script>
 <style>
 canvas {
 	width: 500px;
