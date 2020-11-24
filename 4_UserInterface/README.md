@@ -27,6 +27,7 @@
 <tr><td>5</td><td>데이터베이스</td><td>PostgreSQL 9.6</td></tr>
 </table>
 <br>
+
 <h2>🔷 Python version</h2>
 <h3>✔ 개발환경</h3>
 <table>
