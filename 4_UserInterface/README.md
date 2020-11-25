@@ -16,9 +16,9 @@
 <li>한눈에 토픽별 키워드를 확인이 가능</li>
 <li>판매자는 아뜰리에가 어떤 토픽과 얼마나 유사한지 확인하여 자신의 아뜰리에 특성을 파악이 가능</li>
 </ol>
-<h4>✔ 시스템구성도</h4>
+<h3>💡 시스템구성도</h3>
 <img src='https://ifh.cc/g/4HyY2U.png' border='0'>
-<h4>✔ 개발환경</h4>
+<h3>💡 개발환경</h3>
 <table>
 <tr><td>1</td><td>통합 개발 환경</td><td>Eclipse Jee Oxygen</td></tr>
 <tr><td>2</td><td>사용자 인터페이스 (Client side)</td><td>HTML5, CSS, JavaScript, jQuery, Ajax</td></tr>
@@ -29,7 +29,7 @@
 <br>
 
 <h2>🔷 Python version</h2>
-<h3>✔ 개발환경</h3>
+<h3>💡 개발환경</h3>
 <table>
 <tr><td>1</td><td>통합 개발 환경</td><td>Pycharm Community Edition, Google Colab</td></tr>
 <tr><td>2</td><td>Client side</td><td>HTML5, CSS, JavaScript, jQuery, Ajax</td></tr>
