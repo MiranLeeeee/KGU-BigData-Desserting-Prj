@@ -30,6 +30,7 @@
 
 <h2>🔷 Python version</h2>
 <h3>💡 구현내용</h3>
+
 <h3>💡 개발환경</h3>
 <table>
 <tr><td>1</td><td>통합 개발 환경</td><td>Pycharm Community Edition, Google Colab</td></tr>
