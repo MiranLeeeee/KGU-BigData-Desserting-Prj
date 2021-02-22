@@ -26,12 +26,3 @@
 <tr><td>4</td><td>애플리케이션 서버 (Server side)</td><td>Spring framework 4</td></tr>
 <tr><td>5</td><td>데이터베이스</td><td>PostgreSQL 9.6</td></tr>
 </table>
-<br>
-<h2>🔷 Python version</h2>
-<h4>✔ 개발환경</h4>
-<table>
-<tr><td>1</td><td>통합 개발 환경</td><td>Pycharm Community Edition, Google Colab</td></tr>
-<tr><td>2</td><td>Client side</td><td>HTML5, CSS, JavaScript, jQuery, Ajax</td></tr>
-<tr><td>3</td><td>Server side</td><td>Flask 1.1.2</td></tr>
-<tr><td>5</td><td>데이터베이스</td><td>MongoDB 4.2</td></tr>
-</table>
